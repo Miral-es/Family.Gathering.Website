@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Family Gathering Website</title>
 
     <style>
-
         body{
             margin:0;
             font-family:Arial;
-            background-color:#f4f4f4;
+            background:#f4f4f4;
         }
 
         .header{
             background:#8e44ad;
             color:white;
-            padding:40px;
+            padding:50px;
             text-align:center;
         }
 
         .header h1{
+            font-size:48px;
             margin:0;
-            font-size:50px;
         }
 
         .navbar{
@@ -41,13 +39,28 @@
             background:white;
             width:80%;
             margin:30px auto;
-            padding:25px;
+            padding:30px;
             border-radius:15px;
             box-shadow:0 0 10px rgba(0,0,0,0.1);
         }
 
         h2{
             color:#8e44ad;
+        }
+
+        .empty{
+            color:#777;
+            font-style:italic;
+        }
+
+        button{
+            background:#8e44ad;
+            color:white;
+            padding:14px 28px;
+            border:none;
+            border-radius:10px;
+            font-size:17px;
+            cursor:pointer;
         }
 
         .footer{
@@ -57,79 +70,51 @@
             padding:20px;
             margin-top:40px;
         }
-
-        button{
-            background:#8e44ad;
-            color:white;
-            padding:15px 30px;
-            border:none;
-            border-radius:10px;
-            font-size:18px;
-            cursor:pointer;
-        }
-
     </style>
-
 </head>
 
 <body>
 
     <div class="header">
         <h1>Family Gathering Website</h1>
-        <p>Organize family events and gatherings easily</p>
+        <p>A simple website to organize our family gatherings</p>
     </div>
 
     <div class="navbar">
-        <a href="">Home</a>
-        <a href="">Gatherings</a>
-        <a href="">Food</a>
-        <a href="">Gallery</a>
-        <a href="">Contact</a>
+        <a href="#gathering">Gathering</a>
+        <a href="#food">Food</a>
+        <a href="#members">Family Members</a>
+        <a href="#photos">Photos</a>
+        <a href="#rsvp">RSVP</a>
     </div>
 
-    <div class="section">
+    <div class="section" id="gathering">
         <h2>Next Gathering</h2>
-
-        <p><b>Date:</b> Friday, May 16</p>
-        <p><b>Time:</b> 8:00 PM</p>
-        <p><b>Location:</b> Grandma's House</p>
+        <p class="empty">No gathering details added yet.</p>
     </div>
 
-    <div class="section">
+    <div class="section" id="food">
         <h2>Food List</h2>
-
-        <ul>
-            <li>Pizza - Sara</li>
-            <li>Dessert - Lina</li>
-            <li>Drinks - Ahmed</li>
-        </ul>
+        <p class="empty">No food items added yet.</p>
     </div>
 
-    <div class="section">
-        <h2>Family Members Coming</h2>
+    <div class="section" id="members">
+        <h2>Family Members</h2>
+        <p class="empty">No family members added yet.</p>
+    </div>
 
-        <ul>
-            <li>Sara</li>
-            <li>Lina</li>
-            <li>Ahmed</li>
-        </ul>
+    <div class="section" id="photos">
+        <h2>Photos</h2>
+        <p class="empty">No photos uploaded yet.</p>
+    </div>
 
-        <br>
+    <div class="section" id="rsvp">
+        <h2>Join the Gathering</h2>
+        <p>Click the button below to write your name and confirm if you are coming.</p>
 
         <a href="https://forms.gle/3esEm8eTRC5RHKTw8" target="_blank">
-
-            <button>
-                RSVP Now
-            </button>
-
+            <button>RSVP Now</button>
         </a>
-
-    </div>
-
-    <div class="section">
-        <h2>Gallery</h2>
-
-        <p>Photos from our previous gatherings will be added here.</p>
     </div>
 
     <div class="footer">
@@ -137,5 +122,4 @@
     </div>
 
 </body>
-
 </html>
